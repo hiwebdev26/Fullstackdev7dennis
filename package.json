@@ -1,5 +1,5 @@
 {
-  "name": "space-portfolio",
+  "name": "fullstack_dev-portfolio",
   "version": "1.0.1",
   "private": true,
   "scripts": {
@@ -9,9 +9,9 @@
     "lint": "next lint"
   },
   "author": {
-    "name": "Sanidhya Kumar Verma",
-    "email": "sanidhya.verma12345@gmail.com",
-    "url": "https://github.com/sanidhyy"
+    "name": "Dennis Lee",
+    "email": "hiwebdev0026@gmail.com",
+    "url": "https://github.com/hiwebdev26"
   },
   "description": "Welcome to my full stack Next.js 14 space portfolio.",
   "keywords": [
@@ -48,12 +48,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/sanidhyy/space-portfolioit"
+    "url": "https://github.com/hiwebdev26/FullStack_Dev-Portfolio"
   },
-  "homepage": "https://github.com/sanidhyy/space-portfolio#readme",
+  "homepage": "https://github.com/hiwebdev26/FullStack_Dev-Portfolio#readme",
   "bugs": {
-    "url": "https://github.com/sanidhyy/space-portfolio/issues",
-    "email": "sanidhya.verma12345@gmail.com"
+    "url": "https://github.com/hiwebdev26/FullStack_Dev-Portfolio/issues",
+    "email": "hiwebdev0026@gmail.com"
   },
   "funding": [
     {
