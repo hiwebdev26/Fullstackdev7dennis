@@ -1,4 +1,10 @@
-import { FaYoutube, FaFacebook } from "react-icons/fa";
+import { 
+  FaTelegram, 
+  FaYoutube, 
+  FaDiscord,
+  FaSkype,
+  FaGoogle
+} from "react-icons/fa";
 import {
   RxDiscordLogo,
   RxGithubLogo,
@@ -90,19 +96,19 @@ export const SKILL_DATA = [
 
 export const SOCIALS = [
   {
-    name: "Instagram",
-    icon: RxInstagramLogo,
-    link: "https://instagram.com",
+    name: "Telegram",
+    icon: FaTelegram,
+    link: "https://t.me/superdev",
   },
   {
-    name: "Facebook",
-    icon: FaFacebook,
-    link: "https://facebook.com",
+    name: "Discord",
+    icon: FaDiscord,
+    link: "https://discord.gg/gnfMx4uY",
   },
   {
-    name: "Twitter",
-    icon: RxTwitterLogo,
-    link: "https://twitter.com",
+    name: "Skype",
+    icon: FaSkype,
+    link: "https://web.skype.com",
   },
 ] as const;
 
@@ -286,19 +292,19 @@ export const FOOTER_DATA = [
     title: "Community",
     data: [
       {
+        name: "GitHub",
+        icon: RxGithubLogo,
+        link: "https://github.com/hiwebdev26",
+      },
+      {
+        name: "Gmail",
+        icon: FaGoogle,
+        link: "hiwebdev0026@gmail.com",
+      },
+      {
         name: "YouTube",
         icon: FaYoutube,
         link: "https://youtube.com",
-      },
-      {
-        name: "GitHub",
-        icon: RxGithubLogo,
-        link: "https://github.com",
-      },
-      {
-        name: "Discord",
-        icon: RxDiscordLogo,
-        link: "https://discord.com",
       },
     ],
   },
@@ -306,20 +312,25 @@ export const FOOTER_DATA = [
     title: "Social Media",
     data: [
       {
-        name: "Instagram",
-        icon: RxInstagramLogo,
-        link: "https://instagram.com",
+        name: "Telegram",
+        icon: FaTelegram,
+        link: "https://t.me/superdev",
       },
       {
-        name: "Twitter",
-        icon: RxTwitterLogo,
-        link: "https://twitter.com",
+        name: "Discord",
+        icon: FaDiscord,
+        link: "https://discord.gg/gnfMx4uY",
       },
       {
-        name: "Linkedin",
-        icon: RxLinkedinLogo,
-        link: "https://linkedin.com",
+        name: "Skype",
+        icon: FaSkype,
+        link: "https://web.skype.com",
       },
+      // {
+      //   name: "Linkedin",
+      //   icon: RxLinkedinLogo,
+      //   link: "https://linkedin.com",
+      // },
     ],
   },
   {
