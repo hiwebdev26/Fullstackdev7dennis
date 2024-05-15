@@ -45,8 +45,7 @@ export const HeroContent = () => {
           variants={slideInFromLeft(0.8)}
           className="text-lg text-gray-400 my-5 max-w-[600px]"
         >
-          I&apos;m a Full Stack Software Engineer with experience in Website,
-          Mobile, and Software development. Check out my projects and skills.
+          This is looking-forward full stack developer need to everyone with being pro when it comes to Mern, CMS, Blockchain and so on. For years now, provided high-quality, easy-to-maintain code was always satisfied all of client and teammate and then stay on top of the latest trend and practices, so you know my skills are always fresh and cutting-edge.
         </motion.p>
 
         <motion.a
