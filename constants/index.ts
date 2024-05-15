@@ -108,7 +108,7 @@ export const SOCIALS = [
   {
     name: "Skype",
     icon: FaSkype,
-    link: "https://web.skype.com",
+    link: "https://join.skype.com/invite/pTDpQyK9lx5a",
   },
 ] as const;
 
