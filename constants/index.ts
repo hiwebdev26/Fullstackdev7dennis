@@ -324,7 +324,7 @@ export const FOOTER_DATA = [
       {
         name: "Skype",
         icon: FaSkype,
-        link: "https://web.skype.com",
+        link: "https://join.skype.com/invite/pTDpQyK9lx5a",
       },
       // {
       //   name: "Linkedin",
@@ -349,7 +349,7 @@ export const FOOTER_DATA = [
       {
         name: "Contact Me",
         icon: null,
-        link: "mailto:contact@example.com",
+        link: "mailto:hiwebdev0026@gmail.com",
       },
     ],
   },
