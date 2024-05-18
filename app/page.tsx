@@ -51,10 +51,6 @@ export default function Home() {
       window.removeEventListener("resize", debouncedDimensionCalculator);
   }, [timer]);
 
-  const renderBackdrop = (): React.ReactNode => (
-    <div className="fixed top-0 left-0 h-screen w-screen bg-gray-900 -z-1"></div>
-  );
-
   return (
     <main className="h-full w-full">
       <div className="flex flex-col gap-20">
