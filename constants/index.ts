@@ -287,6 +287,13 @@ export const PROJECTS = [
   },
 ] as const;
 
+export const TYPED_STRINGS = [
+  "I design and develop things",
+  "I develop modern frontend apps",
+  "I design dynamic user experience",
+  "I design and develop motion",
+];
+
 export const FOOTER_DATA = [
   {
     title: "Community",

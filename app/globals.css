@@ -7,6 +7,11 @@
 .cursive {
   font-family: "Cedarville Cursive", cursive;
 }
+
+a {
+  cursor: none !important;
+}
+
 .Welcome-text {
   background: linear-gradient(
       0deg,
@@ -65,4 +70,9 @@
 
 html {
   scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-gray-900 text-white overflow-x-hidden;
+  cursor: none;
 }

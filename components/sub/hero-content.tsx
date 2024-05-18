@@ -3,6 +3,9 @@
 import { SparklesIcon } from "@heroicons/react/24/solid";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { TYPED_STRINGS } from "../../constants";
+import React, { MutableRefObject, useEffect, useRef } from "react";
+import Typed from "typed.js";
 
 import {
   slideInFromLeft,
@@ -10,7 +13,37 @@ import {
   slideInFromTop,
 } from "@/lib/motion";
 
-export const HeroContent = () => {
+const HERO_STYLES = {
+  SECTION:
+    "w-full flex md:items-center py-8 section-container min-h-screen relative mb-24",
+  CONTENT: "font-medium flex flex-col pt-32 md:pt-0 select-none",
+  SOCIAL_LINK: "link hover:opacity-80 duration-300 md:mr-4 mr-2",
+  BG_WRAPPER:
+    "absolute hero-bg right-0 md:bottom-0 bottom-8 -z-1 md:w-3/4 w-full scale-125 sm:scale-100 flex items-end",
+  TYPED_SPAN: "text-xl sm:text-2xl md:text-4xl seq",
+};
+
+export const HeroContent = React.memo(() => {
+  const typedSpanElement: MutableRefObject<HTMLSpanElement> = useRef(null);
+
+  const initTypeAnimation = (
+    typedSpanElement: MutableRefObject<HTMLSpanElement>
+  ): Typed => {
+    return new Typed(typedSpanElement.current, {
+      strings: TYPED_STRINGS,
+      typeSpeed: 50,
+      backSpeed: 50,
+      backDelay: 8000,
+      loop: true,
+    });
+  };
+
+  // useEffect(() => {
+  //   const typed = initTypeAnimation(typedSpanElement);
+
+  //   return typed.destroy;
+  // }, [typedSpanElement]);
+
   return (
     <motion.div
       initial="hidden"
@@ -40,6 +73,9 @@ export const HeroContent = () => {
             project experience.
           </span>
         </motion.div>
+        {/* <motion.p className="mb-4">
+          <span className={HERO_STYLES.TYPED_SPAN} ref={typedSpanElement}></span>
+        </motion.p> */}
 
         <motion.p
           variants={slideInFromLeft(0.8)}
@@ -71,4 +107,4 @@ export const HeroContent = () => {
       </motion.div>
     </motion.div>
   );
-};
+});
