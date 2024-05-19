@@ -7,7 +7,7 @@
 import styles from "./Cursor.module.scss";
 import { MutableRefObject, useEffect, useRef } from "react";
 import { gsap, Linear } from "gsap";
-import { IDesktop, isSmallScreen } from "../../app/page";
+import { IDesktop } from "../../app/page";
 
 const CURSOR_STYLES = {
   CURSOR: "fixed hidden bg-white w-4 h-4 select-none pointer-events-none z-50",
@@ -68,7 +68,7 @@ const Cursor = ({ isDesktop }: IDesktop) => {
   };
 
   useEffect(() => {
-    if (isDesktop && !isSmallScreen()) {
+    if (isDesktop) {
       initCursorAnimation();
     }
   }, [cursor, follower, isDesktop]);
